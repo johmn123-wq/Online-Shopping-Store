@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+      <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+  <style>
+    body{
+      background: url("back_images/456.jpg")   ;
+      
+      background-color: grey;
+     
+    }
+    html{
+     scroll-behavior: smooth;
+  }
+  .header{
+    
+    text-align:center;
+    padding :40px;
+  }
+
+  .row ::after{
+    content="fdkd";
+    display: table;
+    clear: both;
+  
+   
+
+  }
+
+  .column{
+    float:left ;
+    width: 45%;
+    padding: 40px; 
+   
+  }
+  img{ 
+     max-width: 99.9%;
+    height: auto;
+   }
+   #section1{
+     background-color: red;
+    height: 1500px;
+    text-align: center;
+    
+   }
+   #section2{
+     background-color: yellow;
+     height: 1500px;
+     text-align: center;
+   }
+</style>
+</head>
+<body>
+  
+  
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Online Shopping Store</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            products
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#section2" >Electronics</a></li>
+           
+            <li><a class="dropdown-item" href="#section1">Furnitures</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" required>
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+      
+      <li class="nav-item dropdown">
+
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Account
+             </a>
+             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+               <li><a class="dropdown-item" href="index.php">Login</a></li>
+               <li><a class="dropdown-item" href="index.php"> Register</a></li>
+              
+               <li><hr class="dropdown-divider"></li>
+               <li><a class="dropdown-item" href="#">History</a></li>
+               <li><a class="dropdown-item" href="#">Contact Us</a></li>
+             </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              admin
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="admin/admin_log.php" >Login</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="admin/admin_log.php">Register</a></li>
+             
+             
+            </ul>
+          </li>
+
+       
+        
+        
+      </li>
+
+    </div>
+  </div>
+</nav>
+
+
+<img src="images/Online_shop.jpg" class="img-responsive" alt="Chania" >
+
+
+
+<div class= header  >
+  <h1>Accessories</h1>
+  </div>
+  
+  <div class="row">
+     
+   
+        <div class="column" id=section1 >
+     
+      <img src=images/bedroom-furniture-250x250.jpg> 
+      <img src=images/asian-furniture-250x250.jpg> 
+      <img src=images/f4.jpg> 
+      <img src=images/product051.png> 
+     
+  
+        
+    </div>
+  
+   
+  
+    <div class="column" id=section2>
+      <img src=images/office5.jpg> 
+      <img src=images/ipad2.jpg> 
+      <img src=images/iphone.jpg> 
+      <img src=images/product03.png> 
+      <img src=images/camera.jpg> 
+     
+    
+   
+  </div>
+  
+     </div>
+  
+  
+  
+     
+
+<section class="related products">
+  <div class="container mb-4 pb-lg-3">
+
+              <div class="d-flex flex-wrap justify-content-between align-items-center border-bottom pb-4 mb-4">
+      
+      <h2 class="h3 mb-0 pt-2">Related Templates</h2>
+
+                </div>
+      
+                <div class="products-carousel-wrap related-product-carousel" data-ride="ct-slick-carousel" data-wrap=".products" data-slick="{&quot;slidesToShow&quot;:4,&quot;slidesToScroll&quot;:1,&quot;infinite&quot;:false,&quot;autoplay&quot;:false,&quot;arrows&quot;:true,&quot;dots&quot;:false,&quot;responsive&quot;:[{&quot;breakpoint&quot;:0,&quot;settings&quot;:{&quot;slidesToShow&quot;:1,&quot;slidesToScroll&quot;:1}},{&quot;breakpoint&quot;:576,&quot;settings&quot;:{&quot;slidesToShow&quot;:1,&quot;slidesToScroll&quot;:1}},{&quot;breakpoint&quot;:768,&quot;settings&quot;:{&quot;slidesToShow&quot;:2,&quot;slidesToScroll&quot;:2}},{&quot;breakpoint&quot;:992,&quot;settings&quot;:{&quot;slidesToShow&quot;:3,&quot;slidesToScroll&quot;:3}},{&quot;breakpoint&quot;:1200,&quot;settings&quot;:{&quot;slidesToShow&quot;:4,&quot;slidesToScroll&quot;:4}}]}">
+      <ul class="list-unstyled products columns-4">
+
+        
+            <li class="product type-product post-42444 status-publish first instock product_cat-corporate-business-website-templates product_tag-business product_tag-corporate product_tag-corporate-business product_tag-flat product_tag-institute product_tag-landing-page product_tag-mobile-applications product_tag-office product_tag-personal-website product_tag-products product_tag-responsive product_tag-responsive-templates has-post-thumbnail downloadable virtual purchasable product-type-simple">
+        <div class="card product-card-alt">        <div class="product-thumb">
+<div class="yith-wcwl-add-to-wishlist add-to-wishlist-42444  wishlist-fragment on-first-load" data-fragment-ref="42444" data-fragment-options="{&quot;base_url&quot;:&quot;&quot;,&quot;in_default_wishlist&quot;:false,&quot;is_single&quot;:false,&quot;show_exists&quot;:true,&quot;product_id&quot;:42444,&quot;parent_product_id&quot;:42444,&quot;product_type&quot;:&quot;simple&quot;,&quot;show_view&quot;:false,&quot;browse_wishlist_text&quot;:&quot;Browse wishlist&quot;,&quot;already_in_wishslist_text&quot;:&quot;The template is already in your wishlist!&quot;,&quot;product_added_text&quot;:&quot;Template added!&quot;,&quot;heading_icon&quot;:&quot;fa-heart-o&quot;,&quot;available_multi_wishlist&quot;:false,&quot;disable_wishlist&quot;:false,&quot;show_count&quot;:false,&quot;ajax_loading&quot;:false,&quot;loop_position&quot;:&quot;after_add_to_cart&quot;,&quot;product_image&quot;:&quot;&quot;,&quot;label_popup&quot;:&quot;&quot;,&quot;add_to_wishlist_modal&quot;:&quot;default&quot;,&quot;item&quot;:&quot;add_to_wishlist&quot;}">
+</div>        <div class="product-card-actions">        </div><a class="product-thumb-overlay" href="https://w3layouts.com/template/aegis-coraporate-category-bootstrap-responsive-website-template/"></a><img width="350" height="219" src="https://w3lcdn.w3layouts.com/wp-content/uploads/2019/03/Frame-17-1-386x241.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="website-templates" loading="lazy" srcset="https://w3lcdn.w3layouts.com/wp-content/uploads/2019/03/Frame-17-1-386x241.jpg 386w, https://w3lcdn.w3layouts.com/wp-content/uploads/2019/03/Frame-17-1-600x375.jpg 600w, https://w3lcdn.w3layouts.com/wp-content/uploads/2019/03/Frame-17-1-990x619.jpg 990w, https://w3lcdn.w3layouts.com/wp-content/uploads/2019/03/Frame-17-1-768x480.jpg 768w, https://w3lcdn.w3layouts.com/wp-content/uploads/2019/03/Frame-17-1-1320x825.jpg 1320w, https://w3lcdn.w3layouts.com/wp-content/uploads/2019/03/Frame-17-1.jpg 1760w" sizes="(max-width: 350px) 100vw, 350px" />        </div>        <div class="card-body">        <div class="d-flex flex-wrap justify-content-between align-items-start pb-2 product-category-list">        </div><h3 class="woocommerce-loop-product__title product-title font-size-sm"><a href="https://w3layouts.com/template/aegis-coraporate-category-bootstrap-responsive-website-template/">Aegis Coraporate Category Bootstrap Responsive Website Template</a></h3>        <div class="d-flex flex-wrap justify-content-between align-items-center">        </div>        </div>        </div></li>
+
+        
+            <li class="product type-product post-42442 status-publish instock product_cat-corporate-business-website-templates product_tag-business product_tag-corporate product_tag-corporate-business product_tag-flat product_tag-institute product_tag-landing-page product_tag-mobile-applications product_tag-office product_tag-personal-website product_tag-products product_tag-responsive product_tag-responsive-templates has-post-thumbnail downloadable virtual purchasable product-type-simple">
+        <div class="card product-card-alt">        <div class="product-thumb">
+<div class="yith-wcwl-add-to-wishlist add-to-wishlist-42442  wishlist-fragment on-first-load" data-fragment-ref="42442" data-fragment-options="{&quot;base_url&quot;:&quot;&quot;,&quot;in_default_wishlist&quot;:false,&quot;is_single&quot;:false,&quot;show_exists&quot;:true,&quot;product_id&quot;:42442,&quot;parent_product_id&quot;:42442,&quot;product_type&quot;:&quot;simple&quot;,&quot;show_view&quot;:false,&quot;browse_wishlist_text&quot;:&quot;Browse wishlist&quot;,&quot;already_in_wishslist_text&quot;:&quot;The template is already in your wishlist!&quot;,&quot;product_added_text&quot;:&quot;Template added!&quot;,&quot;heading_icon&quot;:&quot;fa-heart-o&quot;,&quot;available_multi_wishlist&quot;:false,&quot;disable_wishlist&quot;:false,&quot;show_count&quot;:false,&quot;ajax_loading&quot;:false,&quot;loop_position&quot;:&quot;after_add_to_cart&quot;,&quot;product_image&quot;:&quot;&quot;,&quot;label_popup&quot;:&quot;&quot;,&quot;add_to_wishlist_modal&quot;:&quot;default&quot;,&quot;item&quot;:&quot;add_to_wishlist&quot;}">
+</div>        <div class="product-card-actions">        </div><a class="product-thumb-overlay" href="https://w3layouts.com/template/digital-a-business-category-flat-bootstrap-responsive-web-template/"></a><img width="350" height="219" src="https://w3lcdn.w3layouts.com/wp-content/uploads/2019/04/digital-template-386x241.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" loading="lazy" srcset="https://w3lcdn.w3layouts.com/wp-content/uploads/2019/04/digital-template-386x241.jpg 386w, https://w3lcdn.w3layouts.com/wp-content/uploads/2019/04/digital-template-600x375.jpg 600w, https://w3lcdn.w3layouts.com/wp-content/uploads/2019/04/digital-template-990x619.jpg 990w, https://w3lcdn.w3layouts.com/wp-content/uploads/2019/04/digital-template-768x480.jpg 768w, https://w3lcdn.w3layouts.com/wp-content/uploads/2019/04/digital-template-1320x825.jpg 1320w, https://w3lcdn.w3layouts.com/wp-content/uploads/2019/04/digital-template.jpg 1760w" sizes="(max-width: 350px) 100vw, 350px" />        </div>        <div class="card-body">        <div class="d-flex flex-wrap justify-content-between align-items-start pb-2 product-category-list">        </div><h3 class="woocommerce-loop-product__title product-title font-size-sm"><a href="https://w3layouts.com/template/digital-a-business-category-flat-bootstrap-responsive-web-template/">Digital a Business Category Flat Bootstrap Responsive Web Template</a></h3>        <div class="d-flex flex-wrap justify-content-between align-items-center">        </div>        </div>        </div></li>
+
+        
+            <li class="product type-product post-42434 status-publish instock product_cat-corporate-business-website-templates product_tag-business product_tag-corporate product_tag-corporate-business product_tag-flat product_tag-institute product_tag-landing-page product_tag-mobile-applications product_tag-office product_tag-personal-website product_tag-products product_tag-responsive product_tag-responsive-templates has-post-thumbnail downloadable virtual purchasable product-type-simple">
+        <div class="card product-card-alt">        <div class="product-thumb">
+<div class="yith-wcwl-add-to-wishlist add-to-wishlist-42434  wishlist-fragment on-first-load" data-fragment-ref="42434" data-fragment-options="{&quot;base_url&quot;:&quot;&quot;,&quot;in_default_wishlist&quot;:false,&quot;is_single&quot;:false,&quot;show_exists&quot;:true,&quot;product_id&quot;:42434,&quot;parent_product_id&quot;:42434,&quot;product_type&quot;:&quot;simple&quot;,&quot;show_view&quot;:false,&quot;browse_wishlist_text&quot;:&quot;Browse wishlist&quot;,&quot;already_in_wishslist_text&quot;:&quot;The template is already in your wishlist!&quot;,&quot;product_added_text&quot;:&quot;Template added!&quot;,&quot;heading_icon&quot;:&quot;fa-heart-o&quot;,&quot;available_multi_wishlist&quot;:false,&quot;disable_wishlist&quot;:false,&quot;show_count&quot;:false,&quot;ajax_loading&quot;:false,&quot;loop_position&quot;:&quot;after_add_to_cart&quot;,&quot;product_image&quot;:&quot;&quot;,&quot;label_popup&quot;:&quot;&quot;,&quot;add_to_wishlist_modal&quot;:&quot;default&quot;,&quot;item&quot;:&quot;add_to_wishlist&quot;}">
+</div>        <div class="product-card-actions">        </div><a class="product-thumb-overlay" href="https://w3layouts.com/template/market-website-template/"></a><img width="350" height="219" src="https://w3lcdn.w3layouts.com/wp-content/uploads/2020/01/Frame-14-5-1-386x241.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="website-templates" loading="lazy" srcset="https://w3lcdn.w3layouts.com/wp-content/uploads/2020/01/Frame-14-5-1-386x241.jpg 386w, https://w3lcdn.w3layouts.com/wp-content/uploads/2020/01/Frame-14-5-1-600x375.jpg 600w, https://w3lcdn.w3layouts.com/wp-content/uploads/2020/01/Frame-14-5-1-990x619.jpg 990w, https://w3lcdn.w3layouts.com/wp-content/uploads/2020/01/Frame-14-5-1-768x480.jpg 768w, https://w3lcdn.w3layouts.com/wp-content/uploads/2020/01/Frame-14-5-1-1320x825.jpg 1320w, https://w3lcdn.w3layouts.com/wp-content/uploads/2020/01/Frame-14-5-1.jpg 1760w" sizes="(max-width: 350px) 100vw, 350px" />        </div>        <div class="card-body">        <div class="d-flex flex-wrap justify-content-between align-items-start pb-2 product-category-list">        </div><h3 class="woocommerce-loop-product__title product-title font-size-sm"><a href="https://w3layouts.com/template/market-website-template/">Market Website Template</a></h3>        <div class="d-flex flex-wrap justify-content-between align-items-center">        </div>        </div>        </div></li>
+
+        
+            <li class="product type-product post-42438 status-publish last instock product_cat-corporate-business-website-templates product_tag-business product_tag-corporate product_tag-corporate-business product_tag-flat product_tag-institute product_tag-landing-page product_tag-mobile-applications product_tag-office product_tag-personal-website product_tag-products product_tag-responsive product_tag-responsive-templates has-post-thumbnail downloadable virtual purchasable product-type-simple">
+        <div class="card product-card-alt">        <div class="product-thumb">
+<div class="yith-wcwl-add-to-wishlist add-to-wishlist-42438  wishlist-fragment on-first-load" data-fragment-ref="42438" data-fragment-options="{&quot;base_url&quot;:&quot;&quot;,&quot;in_default_wishlist&quot;:false,&quot;is_single&quot;:false,&quot;show_exists&quot;:true,&quot;product_id&quot;:42438,&quot;parent_product_id&quot;:42438,&quot;product_type&quot;:&quot;simple&quot;,&quot;show_view&quot;:false,&quot;browse_wishlist_text&quot;:&quot;Browse wishlist&quot;,&quot;already_in_wishslist_text&quot;:&quot;The template is already in your wishlist!&quot;,&quot;product_added_text&quot;:&quot;Template added!&quot;,&quot;heading_icon&quot;:&quot;fa-heart-o&quot;,&quot;available_multi_wishlist&quot;:false,&quot;disable_wishlist&quot;:false,&quot;show_count&quot;:false,&quot;ajax_loading&quot;:false,&quot;loop_position&quot;:&quot;after_add_to_cart&quot;,&quot;product_image&quot;:&quot;&quot;,&quot;label_popup&quot;:&quot;&quot;,&quot;add_to_wishlist_modal&quot;:&quot;default&quot;,&quot;item&quot;:&quot;add_to_wishlist&quot;}">
+</div>        <div class="product-card-actions">        </div><a class="product-thumb-overlay" href="https://w3layouts.com/template/pro-market-a-corporate-category-bootstrap-responsive-web-template/"></a><img width="350" height="219" src="https://w3lcdn.w3layouts.com/wp-content/uploads/2019/06/pro-mmarket-website-template-386x241.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="pro-market-website-template" loading="lazy" srcset="https://w3lcdn.w3layouts.com/wp-content/uploads/2019/06/pro-mmarket-website-template-386x241.jpg 386w, https://w3lcdn.w3layouts.com/wp-content/uploads/2019/06/pro-mmarket-website-template-600x375.jpg 600w, https://w3lcdn.w3layouts.com/wp-content/uploads/2019/06/pro-mmarket-website-template-990x619.jpg 990w, https://w3lcdn.w3layouts.com/wp-content/uploads/2019/06/pro-mmarket-website-template-768x480.jpg 768w, https://w3lcdn.w3layouts.com/wp-content/uploads/2019/06/pro-mmarket-website-template-1320x825.jpg 1320w, https://w3lcdn.w3layouts.com/wp-content/uploads/2019/06/pro-mmarket-website-template.jpg 1760w" sizes="(max-width: 350px) 100vw, 350px" />        </div>        <div class="card-body">        <div class="d-flex flex-wrap justify-content-between align-items-start pb-2 product-category-list">        </div><h3 class="woocommerce-loop-product__title product-title font-size-sm"><a href="https://w3layouts.com/template/pro-market-a-corporate-category-bootstrap-responsive-web-template/">Pro Market &#8211; Corporate Category Bootstrap Responsive Web Template</a></h3>        <div class="d-flex flex-wrap justify-content-between align-items-center">        </div>        </div>        </div></li>
+
+        
+            <li class="product type-product post-42436 status-publish first instock product_cat-corporate-business-website-templates product_tag-business product_tag-corporate product_tag-corporate-business product_tag-flat product_tag-institute product_tag-landing-page product_tag-mobile-applications product_tag-office product_tag-personal-website product_tag-products product_tag-responsive product_tag-responsive-templates has-post-thumbnail downloadable virtual purchasable product-type-simple">
+        <div class="card product-card-alt">        <div class="product-thumb">
+<div class="yith-wcwl-add-to-wishlist add-to-wishlist-42436  wishlist-fragment on-first-load" data-fragment-ref="42436" data-fragment-options="{&quot;base_url&quot;:&quot;&quot;,&quot;in_default_wishlist&quot;:false,&quot;is_single&quot;:false,&quot;show_exists&quot;:true,&quot;product_id&quot;:42436,&quot;parent_product_id&quot;:42436,&quot;product_type&quot;:&quot;simple&quot;,&quot;show_view&quot;:false,&quot;browse_wishlist_text&quot;:&quot;Browse wishlist&quot;,&quot;already_in_wishslist_text&quot;:&quot;The template is already in your wishlist!&quot;,&quot;product_added_text&quot;:&quot;Template added!&quot;,&quot;heading_icon&quot;:&quot;fa-heart-o&quot;,&quot;available_multi_wishlist&quot;:false,&quot;disable_wishlist&quot;:false,&quot;show_count&quot;:false,&quot;ajax_loading&quot;:false,&quot;loop_position&quot;:&quot;after_add_to_cart&quot;,&quot;product_image&quot;:&quot;&quot;,&quot;label_popup&quot;:&quot;&quot;,&quot;add_to_wishlist_modal&quot;:&quot;default&quot;,&quot;item&quot;:&quot;add_to_wishlist&quot;}">
+</div>        <div class="product-card-actions">        </div><a class="product-thumb-overlay" href="https://w3layouts.com/template/infinitude-corporate-category-bootstrap-responsive-website-template/"></a><img width="350" height="219" src="https://w3lcdn.w3layouts.com/wp-content/uploads/2019/06/infinitude-386x241.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" loading="lazy" srcset="https://w3lcdn.w3layouts.com/wp-content/uploads/2019/06/infinitude-386x241.jpg 386w, https://w3lcdn.w3layouts.com/wp-content/uploads/2019/06/infinitude-600x375.jpg 600w, https://w3lcdn.w3layouts.com/wp-content/uploads/2019/06/infinitude-990x619.jpg 990w, https://w3lcdn.w3layouts.com/wp-content/uploads/2019/06/infinitude-768x480.jpg 768w, https://w3lcdn.w3layouts.com/wp-content/uploads/2019/06/infinitude-1320x825.jpg 1320w, https://w3lcdn.w3layouts.com/wp-content/uploads/2019/06/infinitude.jpg 1760w" sizes="(max-width: 350px) 100vw, 350px" />        </div>        <div class="card-body">        <div class="d-flex flex-wrap justify-content-between align-items-start pb-2 product-category-list">        </div><h3 class="woocommerce-loop-product__title product-title font-size-sm"><a href="https://w3layouts.com/template/infinitude-corporate-category-bootstrap-responsive-website-template/">Infinitude &#8211; Corporate Category Bootstrap Responsive Website Template</a></h3>        <div class="d-flex flex-wrap justify-content-between align-items-center">        </div>        </div>        </div></li>
+
+        
+            <li class="product type-product post-42443 status-publish instock product_cat-corporate-business-website-templates product_tag-business product_tag-corporate product_tag-corporate-business product_tag-flat product_tag-institute product_tag-landing-page product_tag-mobile-applications product_tag-office product_tag-personal-website product_tag-products product_tag-responsive product_tag-responsive-templates has-post-thumbnail downloadable virtual purchasable product-type-simple">
+        <div class="card product-card-alt">        <div class="product-thumb">
+<div class="yith-wcwl-add-to-wishlist add-to-wishlist-42443  wishlist-fragment on-first-load" data-fragment-ref="42443" data-fragment-options="{&quot;base_url&quot;:&quot;&quot;,&quot;in_default_wishlist&quot;:false,&quot;is_single&quot;:false,&quot;show_exists&quot;:true,&quot;product_id&quot;:42443,&quot;parent_product_id&quot;:42443,&quot;product_type&quot;:&quot;simple&quot;,&quot;show_view&quot;:false,&quot;browse_wishlist_text&quot;:&quot;Browse wishlist&quot;,&quot;already_in_wishslist_text&quot;:&quot;The template is already in your wishlist!&quot;,&quot;product_added_text&quot;:&quot;Template added!&quot;,&quot;heading_icon&quot;:&quot;fa-heart-o&quot;,&quot;available_multi_wishlist&quot;:false,&quot;disable_wishlist&quot;:false,&quot;show_count&quot;:false,&quot;ajax_loading&quot;:false,&quot;loop_position&quot;:&quot;after_add_to_cart&quot;,&quot;product_image&quot;:&quot;&quot;,&quot;label_popup&quot;:&quot;&quot;,&quot;add_to_wishlist_modal&quot;:&quot;default&quot;,&quot;item&quot;:&quot;add_to_wishlist&quot;}">
+</div>        <div class="product-card-actions">        </div><a class="product-thumb-overlay" href="https://w3layouts.com/template/marketing-a-corporate-category-bootstrap-responsive-web-template/"></a><img width="350" height="219" src="https://w3lcdn.w3layouts.com/wp-content/uploads/2019/03/SM-386x241.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="startup" loading="lazy" srcset="https://w3lcdn.w3layouts.com/wp-content/uploads/2019/03/SM-386x241.jpg 386w, https://w3lcdn.w3layouts.com/wp-content/uploads/2019/03/SM-600x375.jpg 600w, https://w3lcdn.w3layouts.com/wp-content/uploads/2019/03/SM-990x619.jpg 990w, https://w3lcdn.w3layouts.com/wp-content/uploads/2019/03/SM-768x480.jpg 768w, https://w3lcdn.w3layouts.com/wp-content/uploads/2019/03/SM-1320x825.jpg 1320w, https://w3lcdn.w3layouts.com/wp-content/uploads/2019/03/SM.jpg 1760w" sizes="(max-width: 350px) 100vw, 350px" />        </div>        <div class="card-body">        <div class="d-flex flex-wrap justify-content-between align-items-start pb-2 product-category-list">        </div><h3 class="woocommerce-loop-product__title product-title font-size-sm"><a href="https://w3layouts.com/template/marketing-a-corporate-category-bootstrap-responsive-web-template/">Startup a Corporate Category Bootstrap Responsive Web Template</a></h3>        <div class="d-flex flex-wrap justify-content-between align-items-center">        </div>        </div>        </div></li>
+
+        
+            <li class="product type-product post-42431 status-publish instock product_cat-corporate-business-website-templates product_tag-business product_tag-corporate product_tag-corporate-business product_tag-flat product_tag-institute product_tag-landing-page product_tag-mobile-applications product_tag-office product_tag-personal-website product_tag-products product_tag-responsive product_tag-responsive-templates has-post-thumbnail downloadable virtual purchasable product-type-simple">
+        <div class="card product-card-alt">        <div class="product-thumb">
+<div class="yith-wcwl-add-to-wishlist add-to-wishlist-42431  wishlist-fragment on-first-load" data-fragment-ref="42431" data-fragment-options="{&quot;base_url&quot;:&quot;&quot;,&quot;in_default_wishlist&quot;:false,&quot;is_single&quot;:false,&quot;show_exists&quot;:true,&quot;product_id&quot;:42431,&quot;parent_product_id&quot;:42431,&quot;product_type&quot;:&quot;simple&quot;,&quot;show_view&quot;:false,&quot;browse_wishlist_text&quot;:&quot;Browse wishlist&quot;,&quot;already_in_wishslist_text&quot;:&quot;The template is already in your wishlist!&quot;,&quot;product_added_text&quot;:&quot;Template added!&quot;,&quot;heading_icon&quot;:&quot;fa-heart-o&quot;,&quot;available_multi_wishlist&quot;:false,&quot;disable_wishlist&quot;:false,&quot;show_count&quot;:false,&quot;ajax_loading&quot;:false,&quot;loop_position&quot;:&quot;after_add_to_cart&quot;,&quot;product_image&quot;:&quot;&quot;,&quot;label_popup&quot;:&quot;&quot;,&quot;add_to_wishlist_modal&quot;:&quot;default&quot;,&quot;item&quot;:&quot;add_to_wishlist&quot;}">
+</div>        <div class="product-card-actions">        </div><a class="product-thumb-overlay" href="https://w3layouts.com/template/captivate-website-template/"></a><img width="350" height="219" src="https://w3lcdn.w3layouts.com/wp-content/uploads/2020/03/captivate-386x241.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="captivate website template" loading="lazy" srcset="https://w3lcdn.w3layouts.com/wp-content/uploads/2020/03/captivate-386x241.jpg 386w, https://w3lcdn.w3layouts.com/wp-content/uploads/2020/03/captivate-600x375.jpg 600w, https://w3lcdn.w3layouts.com/wp-content/uploads/2020/03/captivate-990x619.jpg 990w, https://w3lcdn.w3layouts.com/wp-content/uploads/2020/03/captivate-1320x825.jpg 1320w, https://w3lcdn.w3layouts.com/wp-content/uploads/2020/03/captivate-768x480.jpg 768w, https://w3lcdn.w3layouts.com/wp-content/uploads/2020/03/captivate-1536x960.jpg 1536w, https://w3lcdn.w3layouts.com/wp-content/uploads/2020/03/captivate.jpg 1760w" sizes="(max-width: 350px) 100vw, 350px" />        </div>        <div class="card-body">        <div class="d-flex flex-wrap justify-content-between align-items-start pb-2 product-category-list">        </div><h3 class="woocommerce-loop-product__title product-title font-size-sm"><a href="https://w3layouts.com/template/captivate-website-template/">Captivate Website Template</a></h3>        <div class="d-flex flex-wrap justify-content-between align-items-center">        </div>        </div>        </div></li>
+
+        
+            <li class="product type-product post-42422 status-publish last instock product_cat-community product_cat-corporate-business-website-templates product_tag-community product_tag-facebook product_tag-orkut product_tag-social-media product_tag-twitter product_tag-web-design product_tag-web-template has-post-thumbnail downloadable virtual purchasable product-type-simple">
+        <div class="card product-card-alt">        <div class="product-thumb">
+<div class="yith-wcwl-add-to-wishlist add-to-wishlist-42422  wishlist-fragment on-first-load" data-fragment-ref="42422" data-fragment-options="{&quot;base_url&quot;:&quot;&quot;,&quot;in_default_wishlist&quot;:false,&quot;is_single&quot;:false,&quot;show_exists&quot;:true,&quot;product_id&quot;:42422,&quot;parent_product_id&quot;:42422,&quot;product_type&quot;:&quot;simple&quot;,&quot;show_view&quot;:false,&quot;browse_wishlist_text&quot;:&quot;Browse wishlist&quot;,&quot;already_in_wishslist_text&quot;:&quot;The template is already in your wishlist!&quot;,&quot;product_added_text&quot;:&quot;Template added!&quot;,&quot;heading_icon&quot;:&quot;fa-heart-o&quot;,&quot;available_multi_wishlist&quot;:false,&quot;disable_wishlist&quot;:false,&quot;show_count&quot;:false,&quot;ajax_loading&quot;:false,&quot;loop_position&quot;:&quot;after_add_to_cart&quot;,&quot;product_image&quot;:&quot;&quot;,&quot;label_popup&quot;:&quot;&quot;,&quot;add_to_wishlist_modal&quot;:&quot;default&quot;,&quot;item&quot;:&quot;add_to_wishlist&quot;}">
+</div>        <div class="product-card-actions">        </div><a class="product-thumb-overlay" href="https://w3layouts.com/template/hallooou-free-html5-responsive-template/"></a><img width="350" height="219" src="https://w3lcdn.w3layouts.com/wp-content/uploads/2015/12/hallooou-1-386x241.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="hallooou website template" loading="lazy" srcset="https://w3lcdn.w3layouts.com/wp-content/uploads/2015/12/hallooou-1-386x241.jpg 386w, https://w3lcdn.w3layouts.com/wp-content/uploads/2015/12/hallooou-1-600x375.jpg 600w, https://w3lcdn.w3layouts.com/wp-content/uploads/2015/12/hallooou-1-990x619.jpg 990w, https://w3lcdn.w3layouts.com/wp-content/uploads/2015/12/hallooou-1-1320x825.jpg 1320w, https://w3lcdn.w3layouts.com/wp-content/uploads/2015/12/hallooou-1-768x480.jpg 768w, https://w3lcdn.w3layouts.com/wp-content/uploads/2015/12/hallooou-1-1536x960.jpg 1536w, https://w3lcdn.w3layouts.com/wp-content/uploads/2015/12/hallooou-1.jpg 1760w" sizes="(max-width: 350px) 100vw, 350px" />        </div>        <div class="card-body">        <div class="d-flex flex-wrap justify-content-between align-items-start pb-2 product-category-list">        </div><h3 class="woocommerce-loop-product__title product-title font-size-sm"><a href="https://w3layouts.com/template/hallooou-free-html5-responsive-template/">Hallooou Free HTML5 Responsive Template</a></h3>        <div class="d-flex flex-wrap justify-content-between align-items-center">        </div>        </div>        </div></li>
+
+        
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<footer class="site-footer footer-v3 pt-5 footer-dark bg-dark">
+
+  <div class="container pt-2 pb-3">
+      <div class="row">
+          <div class="col-md-6 text-center text-md-left mb-4">
+              <div class="text-nowrap mb-3">
+                  <a href="https://w3layouts.com/" class="d-inline-block align-middle mt-n1 mr-3 footer-logo-link" rel="home" style="width: 124px;"><img width="248" height="64" src="https://w3lcdn.w3layouts.com/wp-content/uploads/2020/11/cropped-248x63-white-2.png" class="footer-logo d-block" alt="W3Layouts" loading="lazy" srcset="https://w3lcdn.w3layouts.com/wp-content/uploads/2020/11/cropped-248x63-white-2.png 248w, https://w3lcdn.w3layouts.com/wp-content/uploads/2020/11/cropped-248x63-white-2-190x49.png 190w" sizes="(max-width: 248px) 100vw, 248px" /></a>                    <span class="d-inline-block align-middle h5 font-weight-light text-white mb-0"></span>
+              </div>
+              <p class="font-size-sm text-white opacity-70 pb-1">We help developers, designers and website owner's create stunning websites. We have been building a huge collection of website templates for every business and industry needs. Simply select your favourite template, edit, download and launch 🚀</p>
+                                                  <div class="mt-4"><ul id="menu-social-media" class="social-menu list-inline mb-0"><li id="menu-item-357" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-357 list-inline-item mr-0"><a title="Twitter" href="https://twitter.com/w3layouts" class="social-btn mb-2 mr-1 sb-light sb-twitter"><i class="czi-twitter" aria-hidden="true"></i> Twitter</a></li>
+<li id="menu-item-358" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-358 list-inline-item mr-0"><a title="Facebook" href="https://facebook.com/w3layouts" class="social-btn mb-2 mr-1 sb-light sb-facebook"><i class="czi-facebook" aria-hidden="true"></i> Facebook</a></li>
+<li id="menu-item-359" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-359 list-inline-item mr-0"><a title="Instagram" href="https://instagram.com/w3layouts_" class="social-btn mb-2 mr-1 sb-light sb-instagram"><i class="czi-instagram" aria-hidden="true"></i> Instagram</a></li>
+<li id="menu-item-360" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-360 list-inline-item mr-0"><a title="Pinterest" href="https://pinterest.com/w3layouts" class="social-btn mb-2 mr-1 sb-light sb-pinterest"><i class="czi-pinterest" aria-hidden="true"></i> Pinterest</a></li>
+</ul> </div>
+                              
+          </div>
+
+                                             <div class="col-md-3 d-none d-md-block text-center text-md-left mb-4">
+                      <div id="nav_menu-2" class="widget widget_nav_menu pb-2 mb-4"><div class="menu-footer-widget-menu-1-container"><ul id="menu-footer-widget-menu-1" class="menu"><li id="menu-item-362" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-362"><a href="/">Home</a></li>
+<li id="menu-item-363" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-363"><a href="/about-us/">About</a></li>
+<li id="menu-item-364" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-364"><a href="/news">News</a></li>
+<li id="menu-item-365" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-365"><a href="/contact">Contact</a></li>
+</ul></div></div>                    </div>
+              
+                                  <div class="col-md-3 d-none d-md-block text-center text-md-left mb-4">
+                      <div id="nav_menu-3" class="widget widget_nav_menu pb-2 mb-4"><div class="menu-footer-widget-menu-2-container"><ul id="menu-footer-widget-menu-2" class="menu"><li id="menu-item-368" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-368"><a href="/license">Licenses</a></li>
+<li id="menu-item-369" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-369"><a href="/faqs">FAQ</a></li>
+<li id="menu-item-370" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-370"><a href="/support">Support</a></li>
+<li id="menu-item-374" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-374"><a href="https://roverthemes.com">WordPress Themes</a></li>
+</ul></div></div>                    </div>
+                                  </div>
+  </div>
+
+  <div class="footer-bottom-bar bg-darker ">
+      <div class="container">
+          
+
+          <div class="d-md-flex justify-content-between">
+                                   <div class="pb-4 font-size-xs text-center text-md-left copyright text-light opacity-50">
+                      &copy; All rights reserved by W3layouts limited                    </div>
+              
+                                  <div class="widget widget-links widget-light pb-4">
+                      <ul class="d-flex flex-wrap justify-content-center justify-content-md-start footer-menu"><li id="menu-item-377" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-377"><a title="Help Center" href="/support">Help Center</a></li>
+<li id="menu-item-379" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-379"><a title="Privacy policy" href="/privacy-policy/">Privacy policy</a></li>
+<li id="menu-item-380" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-380"><a title="Terms &amp; Conditions" href="/terms-and-conditions/">Terms &amp; Conditions</a></li>
+</ul>                    </div>
+                           </div>
+      </div>
+  </div>
+
+</footer>
+  
+</body>
+</html>
+
+
+
+
+
+
