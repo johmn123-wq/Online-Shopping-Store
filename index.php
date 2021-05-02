@@ -46,11 +46,21 @@
            $result = mysqli_query($connect, $query);  
            if(mysqli_num_rows($result) > 0)  
            {  
+               $row=mysqli_fetch_array($result);
+              
                
                      if($_POST['username']==$username&&$_POST['password']==$password) 
                      {  
+
                           //return true;  
                           $_SESSION["username"] = $username;  
+
+                        
+                       
+                          $_SESSION["u_id"] =$row['user_id'];
+
+                         
+                            
                           header("location:entry.php");  
                      }  
                      else  
