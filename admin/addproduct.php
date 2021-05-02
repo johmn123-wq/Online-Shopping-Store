@@ -98,10 +98,12 @@ if(isset($_POST["addproduct"])){
   <div class="col-md-6">
     <label for="inputEmail4" class="form-label" style="color:lightgrey" >Product Categories</label>
     <select  class="form-control" name="p_category" style="width: 230px; height: 38px"  placeholder=" Choose interger for electric,furniture or clothes category," required>
+  
     <option selected>1</option>
     <option selected>2</option>
     <option selected>3</option>
     <option selected>4</option>
+    <option selected> </option>
    
   </select>
   </div>
@@ -112,10 +114,16 @@ if(isset($_POST["addproduct"])){
   <div class="col-md-6">
     <label for="inputEmail4" class="form-label" style="color:lightgrey"  >Product Brand</label>
     <select name="p_brand" class="form-control" style="width: 230px; height: 38px" placeholder=" Choose interger for HP,Samsung or Asley category" required>
+   
     <option selected>1</option>
     <option selected>2</option>
     <option selected>3</option>
     <option selected>4</option>
+    <option selected>5</option>
+    <option selected>6</option>
+    <option selected>7</option>
+    <option selected>8</option>
+    <option selected> </option>
    
   </select>
   </div>

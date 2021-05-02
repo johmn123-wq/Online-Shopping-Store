@@ -35,6 +35,10 @@ include "Sidenav.php";
  
  <body >
 
+<<<<<<< HEAD
 <h1>Hello brother how are you>??</h1>
+=======
+<h1>gjhkjll</h1>
+>>>>>>> ABCD
  </body>
  </html>

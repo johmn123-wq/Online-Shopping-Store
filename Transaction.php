@@ -1,12 +1,20 @@
-<?php  
- //entry.php  
- session_start();  
- if(!isset($_SESSION["username"]))  
- {  
-      header("location:index.html?action=login");  
- }  
- ?> 
+<?php
+session_start();
+if(!isset($_SESSION["username"])){
+    header("location:index.html?action=login");
+  
+}
+?>
 
+<?php
+
+$conn=mysqli_connect("localhost",'root','','test');
+if(isset($_POST["submit"])){
+    header("location:invoice.php");
+    die();
+}
+
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -24,9 +32,9 @@
 <link rel="stylesheet" type="text/css" href="style.css">
 
 </head>
-
-<body>
+<body >
     
+
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
   <div class="container-fluid">
     <!--<div class="logo"><img src="logo1.png"></div>-->
@@ -79,129 +87,104 @@
 </nav>
 
 <div class="second-nav">
-  <h3><b><a href="../entry.php">Home  </a>  <span><i class="fa fa-angle-right"></i>  </span>  <a href="about.php"> Invoice</a></b></h3>
+  <h3><b><a href="entry.php">Home  </a>  <span><i class="fa fa-angle-right"></i>  </span>  <a href="#"> Transaction</a></b></h3>
 </div>
 
 <div class="text">
   <div class="red">
-    <h1>Invoice</h1>
+    <h1>Transaction</h1>
   </div>
 </div>
 
-<div class="one">
-  <div class="invoice-1">
-    <h2>Invoice number</h2>
-    <p>126546</p>
-  </div>
-  <div class="invoice-1">
-    <h2>Date of Issue</h2>
-<<<<<<< HEAD
-    <p>02/05/2021</p>
-=======
-    <p>30/04/2021</p>
->>>>>>> ABCD
-  </div>
-</div>
-<br>
 
 <div class="line"></div>
 <br><br>
 
-<div class="two">
-  <div class="invoice-2">
-    <ul>
-      <li>BILLED TO</li>
-      <li>Client name</li>
-      <li>Street address</li>
-      <li>city, state, country</li>
-      <li>ZIP code</li>
-    </ul>
-  </div>
-  <div class="invoice-2">
-    <ul>
-      <li>RED STORE</li>
-      <li>17-A Chandigarh</li>
-      <li>INDIA</li>
-      <li>564-555-1234</li>
-      <li>redstore@gmail.com</li>
-    </ul>
+<div class="text">
+  <div class="red">
+      <h1>Address</h1>
+    <form class="form">
+      <div class="ha">
+        <p>Street Address</p><input type="text" name="street_address" placeholder="Street address">
+      </div>
+      <div class="ha">
+        <p>City</p><input type="text" name="city" placeholder="City">
+      </div>
+      <div class="ha">
+       <p>State</p> <input type="text" name="state" placeholder="State">
+      </div>
+      <div class="ha">
+        <p>Country</p><input type="text" name="country" placeholder="Country">
+      </div>
+      <div class="ha">
+        <p>Landmark</p><input type="text" name="landmark" placeholder="Landmark">
+      </div>
+      <div class="ha">
+        <p>Postcode</p><input type="text" name="postcode" placeholder="Postcode">
+      </div>
+    </form>
   </div>
 </div>
 
-<!-------------------------------------- table --------------------------------------------->
-<?php
-echo "
-<div class='table'>
-      <table>
-          <tr>
-            <th><label>Description</label></th>
-            <th><label>Unit Cost($)</label></th> 
-            <th><label>Quantity</label></th> 
-            <th><label>Amount($)</label></th>   
-          </tr>
-";
-          
-           $total=0;
-           $Amt=0;
-             $conn=mysqli_connect("localhost","root",'','test');
-             $res=mysqli_query($conn,"select * from product,cart where pro_id=p_id  ");
-             if(mysqli_num_rows($res)>0){
-
-              
-
-                    while($row=mysqli_fetch_array($res)){
-                             
-                        $pro_name=$row['p_name'];
-                        $pro_image=$row['p_image'];
-                        $pro_price=$row['p_price'];
-                        $pro_qty = $row['qty'];
-                        $userid= $row['user_id'];
-                    
-                        if($_SESSION['u_id']==$userid){
-<<<<<<< HEAD
-
-=======
-                            
->>>>>>> ABCD
-                        $total+=$pro_price;
-                        $Amt=$pro_price*$pro_qty;
-                        echo "
-                        
-                       <tr>
-                        
-                        <td> $pro_name </td>
-                        <td> $pro_price</td>
-                        <td> $pro_qty </td>
-                        <td>$Amt</td>
-                        
-                       </tr>
-                        
-                        ";
-                    } 
-                       
-                         
-                    }
-                    
-                  
-
-             }
-            
-
-
-   echo"     
-         
-      </table>
-    </div>
-
-    <div class='total'>
-      <h2>Invoice Total</h2>
-      <h1><b>$total $</b></h1>
-    </div>
-
-    <div class='line'></div>
+<div class="line"></div>
 <br><br>
-";
-?>
+
+<div class="text">
+  <div class="red">
+    <h1>Payment</h1>
+    <h2>Pay with Credit Card</h2>
+    <br>
+    <form class="form" method="post">
+      <div class="ha1">
+        <p>Country</p><input type="text" name="country" placeholder="Country">
+      </div>
+      <div class="ha1">
+        <p>First Name</p><input type="text" name="first_name" placeholder="First Name">
+      </div>
+      <div class="ha1">
+        <p>Last Name</p><input type="text" name="last_name" placeholder="Last Name">
+      </div>
+      <div class="ha1">
+        <p>Credir Card Number</p><input type="text" name="credir_card_number" placeholder="Credit Card Number">
+      </div>
+      <div class="ha1">
+        <p class="shift_me">Payment Type</p>
+        <div>
+          <ul class="payments">
+                <li><img src="images1/visa.png" width="50" height="30"></li>
+                <li><img src="images1/mastercard.png" width="50" height="30"></li>
+                <li><img src="images1/paypal.png" width="50" height="30"></li>
+                <li><img src="images1/discover.png" width="50" height="30"></li>
+          </ul>
+        </div>
+      </div>
+      <div class="ha1">
+        <p class="exp">Expiration Date</p>
+        <div class="small">
+          <ul class="make">
+            <div>
+            <li><input type="text" name="month" placeholder="mm"></li>
+            <li>/</li>
+            <li><input type="text" name="year" placeholder="yy"></li>
+          </div>
+          <div>
+            <li>CSC</li>
+            <li><input type="text" name="csc" placeholder="CSC"></li>
+          </div>
+          </ul>
+        </div>
+      </div>
+      <div class="ha1">
+        <input type="submit" name="submit" value="Make Payment">
+      </div>
+    </form>
+  </div>
+</div>
+
+<div class="line"></div>
+<br><br>
+
+
 <!-----------------------------brands------------------------------------------------>
 
   <div class="brands">
@@ -259,7 +242,8 @@ echo "
     </div>
   </div>
 
-
 </body>
 </html>
+
+
 
