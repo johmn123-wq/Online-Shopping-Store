@@ -7,6 +7,8 @@
  }  
  ?> 
 
+ 
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -25,7 +27,7 @@
 
 </head>
 
-<body>
+<body >
     
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
   <div class="container-fluid">
@@ -78,6 +80,8 @@
 
 </nav>
 
+<form method="post">
+
 <div class="second-nav">
   <h3><b><a href="../entry.php">Home  </a>  <span><i class="fa fa-angle-right"></i>  </span>  <a href="about.php"> Invoice</a></b></h3>
 </div>
@@ -95,11 +99,9 @@
   </div>
   <div class="invoice-1">
     <h2>Date of Issue</h2>
-<<<<<<< HEAD
+
     <p>02/05/2021</p>
-=======
-    <p>30/04/2021</p>
->>>>>>> ABCD
+
   </div>
 </div>
 <br>
@@ -111,7 +113,7 @@
   <div class="invoice-2">
     <ul>
       <li>BILLED TO</li>
-      <li>Client name</li>
+      <li><?php echo  $_SESSION['username'];  ?></li>
       <li>Street address</li>
       <li>city, state, country</li>
       <li>ZIP code</li>
@@ -121,16 +123,16 @@
     <ul>
       <li>RED STORE</li>
       <li>17-A Chandigarh</li>
-      <li>INDIA</li>
+      <li>Pakistan</li>
       <li>564-555-1234</li>
-      <li>redstore@gmail.com</li>
+      <li><?php echo  $_SESSION['mail'];  ?></li>
     </ul>
   </div>
 </div>
 
 <!-------------------------------------- table --------------------------------------------->
-<?php
-echo "
+
+
 <div class='table'>
       <table>
           <tr>
@@ -139,8 +141,9 @@ echo "
             <th><label>Quantity</label></th> 
             <th><label>Amount($)</label></th>   
           </tr>
-";
-          
+
+
+      <?php    
            $total=0;
            $Amt=0;
              $conn=mysqli_connect("localhost","root",'','test');
@@ -158,11 +161,8 @@ echo "
                         $userid= $row['user_id'];
                     
                         if($_SESSION['u_id']==$userid){
-<<<<<<< HEAD
 
-=======
-                            
->>>>>>> ABCD
+
                         $total+=$pro_price;
                         $Amt=$pro_price*$pro_qty;
                         echo "
@@ -186,22 +186,31 @@ echo "
 
              }
             
+?>
 
-
-   echo"     
+       
          
       </table>
     </div>
 
     <div class='total'>
       <h2>Invoice Total</h2>
-      <h1><b>$total $</b></h1>
+      <h1><b><?php  echo $total. '$'  ?> </b></h1>
     </div>
+
+   
+
+    <div class='total'>
+    <input type='submit' class='btn btn-primary' name='Download' value='Download Invoice' style='font-size:15px;' />  
+  </div>
+  
+     </form>
+   
 
     <div class='line'></div>
 <br><br>
-";
-?>
+
+
 <!-----------------------------brands------------------------------------------------>
 
   <div class="brands">

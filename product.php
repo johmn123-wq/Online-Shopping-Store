@@ -334,7 +334,7 @@ if(mysqli_num_rows($res)>0){
          
         <div class='product-btns' style='text-align:center'>
         
-            <button  pid='$pro_id' id='product' class='btn btn-success'  href='#'><i class='fa fa-shopping-cart'></i> add to wishlist</button>
+           
 
           </div>
         </div>

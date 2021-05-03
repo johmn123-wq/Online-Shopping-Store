@@ -69,7 +69,7 @@ if(!isset($_SESSION["username"])){
   
    <div class="table-container">
 
-     <h2 class="table-heading"> Welcome to cart</h2>
+     <h2 class="table-heading"> Shopping Cart</h2>
    
    <table>
    <thead>

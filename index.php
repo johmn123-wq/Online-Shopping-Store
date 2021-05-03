@@ -48,20 +48,21 @@
            {  
                $row=mysqli_fetch_array($result);
               
-               
+             /*  echo "$row[0] $row[1] $row[3]";  */
                      if($_POST['username']==$username&&$_POST['password']==$password) 
                      {  
 
                           //return true;  
                           $_SESSION["username"] = $username;  
-
-                        
+                         
+                          
+                          $_SESSION["mail"] = $row[3];
                        
                           $_SESSION["u_id"] =$row['user_id'];
 
                          
                             
-                          header("location:entry.php");  
+                         header("location:entry.php");   
                      }  
                      else  
                      {  

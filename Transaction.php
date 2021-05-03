@@ -8,7 +8,7 @@ if(!isset($_SESSION["username"])){
 
 <?php
 
-$conn=mysqli_connect("localhost",'root','','test');
+
 if(isset($_POST["submit"])){
     header("location:invoice.php");
     die();
